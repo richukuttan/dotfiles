@@ -1,0 +1,42 @@
+[2020-04-10 14:20:15.696] [remoteagent] [info] 
+
+*
+* Visual Studio Code Server
+*
+* Reminder: You may only use this software with Visual Studio family products,
+* as described in the license https://aka.ms/vscode-remote/license
+*
+
+
+[2020-04-10 14:20:15.696] [remoteagent] [info] Extension host agent started.
+[2020-04-10 14:20:16.031] [remoteagent] [info] [::ffff:127.0.0.1][9e86a468][ManagementConnection] New connection established.
+[2020-04-10 14:20:16.034] [remoteagent] [info] [::ffff:127.0.0.1][7954bda0][ExtensionHostConnection] New connection established.
+[2020-04-10 14:20:16.704] [remoteagent] [info] [::ffff:127.0.0.1][7954bda0][ExtensionHostConnection] <309> Launched Extension Host Process.
+[2020-04-10 15:01:49.482] [remoteagent] [info] Installing extension: ms-vscode.cpptools
+[2020-04-10 15:01:50.437] [remoteagent] [info] Downloaded extension: ms-vscode.cpptools /tmp/98847c31-de9a-4ce4-9ba3-746d344bc908
+[2020-04-10 15:01:50.943] [remoteagent] [info] Extracted extension to /home/hrishi/.vscode-server/extensions/.ms-vscode.cpptools-0.27.0: ms-vscode.cpptools
+[2020-04-10 15:01:50.954] [remoteagent] [info] Renamed to /home/hrishi/.vscode-server/extensions/ms-vscode.cpptools-0.27.0
+[2020-04-10 15:01:50.966] [remoteagent] [info] Installation completed. ms-vscode.cpptools
+[2020-04-10 15:01:50.980] [remoteagent] [info] Extensions installed successfully: ms-vscode.cpptools
+[2020-04-10 15:01:54.696] [remoteagent] [info] Installing extension: ms-python.python
+[2020-04-10 15:01:57.425] [remoteagent] [info] Downloaded extension: ms-python.python /tmp/c2349156-7724-44fa-8a04-eefe10b5a918
+[2020-04-10 15:01:58.525] [remoteagent] [info] [::ffff:127.0.0.1][9e86a468][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+[2020-04-10 15:01:59.544] [remoteagent] [info] [::ffff:127.0.0.1][7954bda0][ExtensionHostConnection] <309> Extension Host Process exited with code: 0, signal: null.
+[2020-04-10 15:02:00.822] [remoteagent] [info] [::ffff:127.0.0.1][16d6bc6f][ManagementConnection] New connection established.
+[2020-04-10 15:02:00.823] [remoteagent] [info] [::ffff:127.0.0.1][2a91bf2e][ExtensionHostConnection] New connection established.
+[2020-04-10 15:02:00.852] [remoteagent] [info] [::ffff:127.0.0.1][2a91bf2e][ExtensionHostConnection] <5907> Launched Extension Host Process.
+[2020-04-10 15:02:04.043] [remoteagent] [info] Extracted extension to /home/hrishi/.vscode-server/extensions/.ms-python.python-2020.3.71659: ms-python.python
+[2020-04-10 15:02:04.130] [remoteagent] [info] Renamed to /home/hrishi/.vscode-server/extensions/ms-python.python-2020.3.71659
+[2020-04-10 15:02:04.146] [remoteagent] [info] Installation completed. ms-python.python
+[2020-04-10 15:02:04.163] [remoteagent] [info] Extensions installed successfully: ms-python.python
+[2020-04-10 15:02:17.196] [remoteagent] [info] [::ffff:127.0.0.1][16d6bc6f][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+[2020-04-10 15:02:18.218] [remoteagent] [info] [::ffff:127.0.0.1][2a91bf2e][ExtensionHostConnection] <5907> Extension Host Process exited with code: 0, signal: null.
+[2020-04-10 15:02:19.120] [remoteagent] [info] [::ffff:127.0.0.1][790ab92f][ManagementConnection] New connection established.
+[2020-04-10 15:02:19.123] [remoteagent] [info] [::ffff:127.0.0.1][dfd28adf][ExtensionHostConnection] New connection established.
+[2020-04-10 15:02:19.145] [remoteagent] [info] [::ffff:127.0.0.1][dfd28adf][ExtensionHostConnection] <5949> Launched Extension Host Process.
+[2020-04-11 08:28:29.321] [remoteagent] [info] [::ffff:127.0.0.1][dfd28adf][ExtensionHostConnection] The client has reconnected.
+[2020-04-11 08:28:29.322] [remoteagent] [info] [::ffff:127.0.0.1][790ab92f][ManagementConnection] The client has reconnected.
+[2020-04-11 08:40:29.747] [remoteagent] [info] [::ffff:127.0.0.1][790ab92f][ManagementConnection] The client has reconnected.
+[2020-04-11 11:55:06.557] [remoteagent] [info] [::ffff:127.0.0.1][dfd28adf][ExtensionHostConnection] The client has reconnected.
+[2020-04-11 16:21:24.780] [remoteagent] [info] [::ffff:127.0.0.1][790ab92f][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+[2020-04-11 16:21:25.861] [remoteagent] [info] [::ffff:127.0.0.1][dfd28adf][ExtensionHostConnection] <5949> Extension Host Process exited with code: 0, signal: null.

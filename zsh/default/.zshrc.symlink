@@ -1,0 +1,3 @@
+if [[ -z "$ZSH_CACHE_DIR" ]]; then
+	  ZSH_CACHE_DIR="~/.cache/zsh"
+fi
