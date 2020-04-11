@@ -1,3 +1,6 @@
 [submodule "oh-my-zsh/wsl-ubuntu/.oh-my-zsh"]
 	path = oh-my-zsh/wsl-ubuntu/.oh-my-zsh
 	url = https://github.com/ohmyzsh/ohmyzsh/tree/master
+[submodule "/home/hrishi/.dotfiles/oh-my-zsh/wsl-ubuntu/.config/oh-my-zsh/custom/themes/powerlevel10k"]
+	path = /home/hrishi/.dotfiles/oh-my-zsh/wsl-ubuntu/.config/oh-my-zsh/custom/themes/powerlevel10k
+	url = https://github.com/romkatv/powerlevel10k.git
