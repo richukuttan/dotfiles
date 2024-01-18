@@ -1,0 +1,29 @@
+#!/bin/zsh
+#
+# .zsh_plugins.txt - antidote plugins file
+# see https://github.com/getantidote/zdotdir/blob/main/.zsh_plugins.txt
+#
+
+peterhurford/up.zsh # up x to go up the directory tree x times
+# rummik/zsh-tailf
+# mattmc3/zman # to read man pages for zsh
+agkozak/zsh-z # z to move
+
+$ZDOTDIR/.aliases
+
+romkatv/powerlevel10k
+
+ohmyzsh/ohmyzsh path:lib/clipboard.zsh
+ohmyzsh/ohmyzsh path:plugins/copypath
+ohmyzsh/ohmyzsh path:plugins/extract
+
+belak/zsh-utils path:utility
+belak/zsh-utils path:editor
+
+zdharma-continuum/fast-syntax-highlighting kind:defer
+
+zsh-users/zsh-completions path:src kind:fpath
+belak/zsh-utils path:completion
+
+zsh-users/zsh-autosuggestions kind:defer
+zsh-users/zsh-history-substring-search
