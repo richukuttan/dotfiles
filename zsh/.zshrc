@@ -15,7 +15,7 @@ HISTFILE=$ZDOTDIR/.zsh_history
 [[ -d "$HOME/.local/bin" ]] && path+=(~'/.local/bin')
 
 # Clone dotfiles if necessary.
-[[ -d $HOME/.gitsave ]] || git clone https://github.com/richukuttan/dotfiles .gitsave
+[[ -d $HOME/.gitsave ]] || git clone https://github.com/richukuttan/dotfiles ~/.gitsave
 
 # Zsh options
 setopt EXTENDED_GLOB             # Adds features like ^ for inverting a search pattern. Treat the '#', '~' and '^' characters as part of patterns for filename generation, etc. (An initial unquoted '~' always produces named directory expansion.)
