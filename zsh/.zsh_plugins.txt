@@ -10,6 +10,7 @@ peterhurford/up.zsh # up x to go up the directory tree x times
 agkozak/zsh-z # z to move
 
 $ZDOTDIR/.aliases
+$HOME/.aliases
 
 romkatv/powerlevel10k
 

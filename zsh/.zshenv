@@ -6,15 +6,15 @@
 # NOTE: .zshenv needs to live at ~/.zshenv, not in $ZDOTDIR!
 
 # Set ZDOTDIR if you want to re-home Zsh.
-export XDG_CONFIG_HOME=$HOME/.gitsave/.config
+export XDG_CONFIG_HOME=$HOME/.config
 export ZDOTDIR=$HOME/.gitsave/zsh
 
 #
 # Editors
 #
 
-export EDITOR="${EDITOR:-nvim}"
-export VISUAL="${VISUAL:-nvim}"
+export EDITOR="${EDITOR:-vi}"
+export VISUAL="${VISUAL:-vi}"
 export PAGER="${PAGER:-less}"
 
 # You can use .zprofile to set environment vars for non-login, non-interactive shells.
@@ -35,3 +35,4 @@ path=(
   /usr/local/{,s}bin(N)
   $path
 )
+. "/home/hrishikesh/.config/.cargo/env"

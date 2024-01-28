@@ -6,7 +6,7 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 fi
 
 # Set up the environment
-XDG_CONFIG_HOME=$HOME/.gitsave/.config
+#XDG_CONFIG_HOME=$HOME/.gitsave/.config
 ZSH_COMPDUMP=$ZDOTDIR/.zcompdump-$HOST
 HISTFILE=$ZDOTDIR/.zsh_history
 
@@ -53,39 +53,29 @@ zstyle ':completion:*' menu select
 # To customize prompt, run `p10k configure` or edit ~/.gitsave/zsh/.p10k.zsh.
 [[ ! -f ~/.gitsave/zsh/.p10k.zsh ]] || source ~/.gitsave/zsh/.p10k.zsh
 
-# Set up the prompt
-# autoload -Uz promptinit
-# promptinit
-# prompt adam1
+# Restic
+if (( $+commands[restic] ))
+then
+    if { [[ ! -f ~/.gitsave/zsh/.zsh-restic-autocomplete ]] || ((($(date +%s) - $(date -r ~/.gitsave/zsh/.zsh-restic-autocomplete +%s))/86400 > 50)) }
+    then
+        restic generate --zsh-completion ~/.gitsave/zsh/.zsh-restic-autocomplete --quiet
+    fi
+fi
+source ~/.gitsave/zsh/.zsh-restic-autocomplete
 
-# setopt histignorealldups sharehistory
+export NVM_DIR="$HOME/.config/nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-# # Use emacs keybindings even if our EDITOR is set to vi
-# bindkey -e
-
-# # Keep 1000 lines of history within the shell and save it to ~/.zsh_history:
-# HISTSIZE=1000
-# SAVEHIST=1000
-# HISTFILE=~/.zsh_history
-
-# # Use modern completion system
-# autoload -Uz compinit
-# compinit
-
-# zstyle ':completion:*' auto-description 'specify: %d'
-# zstyle ':completion:*' completer _expand _complete _correct _approximate
-# zstyle ':completion:*' format 'Completing %d'
-# zstyle ':completion:*' group-name ''
-# zstyle ':completion:*' menu select=2
-# eval "$(dircolors -b)"
-# zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
-# zstyle ':completion:*' list-colors ''
-# zstyle ':completion:*' list-prompt %SAt %p: Hit TAB for more, or the character to insert%s
-# zstyle ':completion:*' matcher-list '' 'm:{a-z}={A-Z}' 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=* l:|=*'
-# zstyle ':completion:*' menu select=long
-# zstyle ':completion:*' select-prompt %SScrolling active: current selection at %p%s
-# zstyle ':completion:*' use-compctl false
-# zstyle ':completion:*' verbose true
-
-# zstyle ':completion:*:*:kill:*:processes' list-colors '=(#b) #([0-9]#)*=0=01;31'
-# zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
+# >>> mamba initialize >>>
+# !! Contents within this block are managed by 'mamba init' !!
+export MAMBA_EXE='/home/hrishikesh/.local/bin/micromamba';
+export MAMBA_ROOT_PREFIX='/home/hrishikesh/.config/micromamba';
+__mamba_setup="$("$MAMBA_EXE" shell hook --shell zsh --root-prefix "$MAMBA_ROOT_PREFIX" 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__mamba_setup"
+else
+    alias micromamba="$MAMBA_EXE"  # Fallback on help from mamba activate
+fi
+unset __mamba_setup
+# <<< mamba initialize <<<
